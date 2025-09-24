@@ -1,0 +1,164 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .data          0x00000000        0x0 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .text          0x00000000        0x0 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .data          0x00000000        0x0 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .data.SystemCoreClock
+                0x00000000        0x4 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .data          0x00000000        0x0 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+ .bss           0x00000000        0x0 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00080000         xr
+RAM              0x20000000         0x00020000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+LOAD CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+LOAD CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+START GROUP
+LOAD /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/softfp/libgcc.a
+LOAD /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libg.a
+LOAD /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libc.a
+END GROUP
+START GROUP
+LOAD /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/softfp/libgcc.a
+LOAD /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libc.a
+LOAD /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/libnosys.a
+END GROUP
+                0x20020000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x08000000      0x188
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+                0x08000000                g_pfnVectors
+
+.text           0x08000188       0xbc
+ *(.text*)
+ .text.SysTick_Handler
+                0x08000188       0x10 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+                0x08000188                SysTick_Handler
+ .text.startup.main
+                0x08000198       0x78 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+                0x08000198                main
+ .text.SystemInit
+                0x08000210       0x14 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+                0x08000210                SystemInit
+ .text          0x08000224       0x20 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+                0x08000224                Reset_Handler
+                0x08000230                NMI_Handler
+                0x08000232                HardFault_Handler
+                0x08000234                MemManage_Handler
+                0x08000236                BusFault_Handler
+                0x08000238                UsageFault_Handler
+                0x0800023a                SVC_Handler
+                0x0800023c                DebugMon_Handler
+                0x0800023e                PendSV_Handler
+ *(.rodata*)
+
+.glue_7         0x08000244        0x0
+ .glue_7        0x08000244        0x0 linker stubs
+
+.glue_7t        0x08000244        0x0
+ .glue_7t       0x08000244        0x0 linker stubs
+
+.vfp11_veneer   0x08000244        0x0
+ .vfp11_veneer  0x08000244        0x0 linker stubs
+
+.v4_bx          0x08000244        0x0
+ .v4_bx         0x08000244        0x0 linker stubs
+
+.iplt           0x08000244        0x0
+ .iplt          0x08000244        0x0 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+
+.rel.dyn        0x08000244        0x0
+ .rel.iplt      0x08000244        0x0 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+
+.ARM.exidx
+ *(.ARM.exidx*)
+
+.data
+ *(.data*)
+
+.igot.plt       0x20000000        0x0
+ .igot.plt      0x20000000        0x0 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+
+.bss            0x20000000        0x4
+ *(.bss*)
+ .bss.g_ms      0x20000000        0x4 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+                0x20000000                g_ms
+ *(COMMON)
+OUTPUT(stm32-min.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000      0x38f
+ .debug_info    0x00000000      0x25e CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .debug_info    0x0000025e       0xf3 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .debug_info    0x00000351       0x3e CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+
+.debug_abbrev   0x00000000      0x261
+ .debug_abbrev  0x00000000      0x181 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .debug_abbrev  0x00000181       0xb8 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .debug_abbrev  0x00000239       0x28 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+
+.debug_loclists
+                0x00000000       0x49
+ .debug_loclists
+                0x00000000       0x49 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+
+.debug_aranges  0x00000000       0x68
+ .debug_aranges
+                0x00000000       0x28 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .debug_aranges
+                0x00000028       0x20 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .debug_aranges
+                0x00000048       0x20 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+
+.debug_rnglists
+                0x00000000       0x68
+ .debug_rnglists
+                0x00000000       0x55 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .debug_rnglists
+                0x00000055       0x13 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+
+.debug_line     0x00000000      0x468
+ .debug_line    0x00000000      0x275 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .debug_line    0x00000275      0x19c CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .debug_line    0x00000411       0x57 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+
+.debug_str      0x00000000      0x301
+ .debug_str     0x00000000      0x301 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+                                0x248 (size before relaxing)
+ .debug_str     0x00000301      0x1e0 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .debug_str     0x00000301       0xbe CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+
+.comment        0x00000000       0x38
+ .comment       0x00000000       0x38 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+                                 0x39 (size before relaxing)
+ .comment       0x00000038       0x39 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+
+.ARM.attributes
+                0x00000000       0x30
+ .ARM.attributes
+                0x00000000       0x32 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .ARM.attributes
+                0x00000032       0x32 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+ .ARM.attributes
+                0x00000064       0x25 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
+
+.debug_frame    0x00000000       0x58
+ .debug_frame   0x00000000       0x38 CMakeFiles/stm32-min.elf.dir/src/main.c.obj
+ .debug_frame   0x00000038       0x20 CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj
+
+.debug_line_str
+                0x00000000       0x92
+ .debug_line_str
+                0x00000000       0x92 CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj

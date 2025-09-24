@@ -2,16 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Cortex-Debug (OpenOCD + ST-LINK)",
+      "name": "Debug F446 (ST-LINK)",
       "type": "cortex-debug",
       "request": "launch",
       "servertype": "openocd",
       "cwd": "${workspaceFolder}",
       "executable": "${workspaceFolder}/build/stm32-min.elf",
       "device": "STM32F446RE",
-      "configFiles": ["interface/stlink.cfg","target/stm32f4x.cfg"],
-      "runToMain": true,
-      "preLaunchTask": "build"
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f4x.cfg"
+      ],
+      "runToEntryPoint": "main"
     }
   ]
 }

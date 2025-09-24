@@ -1,8 +1,7 @@
 # ninja log v7
-1	13	1758683239211708692	CMakeFiles/stm32-min.dir/startup/startup_stm32f446xx.s.obj	fb0d1e6530f93b0f
-5	128	1758683347197208652	CMakeFiles/stm32-min.dir/src/main.c.obj	3e6f9f95feba0633
-47	91	1758683239257920259	stm32-min	a176b37698b3fa42
-4	48	1758683566540020689	build.ninja	fbb4bd00cae935c2
-4	48	1758683566540020689	/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/cmake_install.cmake	fbb4bd00cae935c2
-0	104	1758683566544805772	CMakeFiles/stm32-min.dir/src/system_stub.c.obj	ddcae716d71c2b1d
-104	150	1758683566648590879	stm32-min	6cabbe896ad9952b
+1	25	1758741802704001693	CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj	e9ba5fe6e716a35
+1	57	1758741802703797317	CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj	b4068c95f52ea096
+1	59	1758741802703397358	CMakeFiles/stm32-min.elf.dir/src/main.c.obj	317a122f2be55a48
+59	188	1758741802762200739	stm32-min.elf	a2bc1b28f090ed23
+5	186	1758743589745501722	CMakeFiles/stm32-min.elf.dir/src/main.c.obj	317a122f2be55a48
+186	242	1758743589926513531	stm32-min.elf	a2bc1b28f090ed23

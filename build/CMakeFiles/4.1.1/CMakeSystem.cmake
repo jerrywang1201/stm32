@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Darwin")
 set(CMAKE_HOST_SYSTEM_VERSION "25.0.0")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "arm64")
 
-include("/Users/wangjialong/Desktop/Resouces/Software/stm32-min/cmake/toolchain-gcc-arm-none-eabi.cmake")
+include("/Users/wangjialong/Desktop/Resouces/Software/stm32-min/cmake/arm-gcc-toolchain.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")
