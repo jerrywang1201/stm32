@@ -1,3 +1,12 @@
 /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/stm32-min.elf.dir
 /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/edit_cache.dir
 /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/rebuild_cache.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/i2c_lowlevel/CMakeFiles/edit_cache.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/i2c_lowlevel/CMakeFiles/rebuild_cache.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/ens160/CMakeFiles/ens160.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/ens160/CMakeFiles/edit_cache.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/ens160/CMakeFiles/rebuild_cache.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/uart2/CMakeFiles/uart2.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/uart2/CMakeFiles/edit_cache.dir
+/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/uart2/CMakeFiles/rebuild_cache.dir

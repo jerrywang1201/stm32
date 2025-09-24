@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: stm32-min
-# Configurations: Debug
+# Configurations: 
 # =============================================================================
 
 #############################################
@@ -20,11 +20,6 @@
 
 ninja_required_version = 1.5
 
-
-#############################################
-# Set configuration variable for custom commands.
-
-CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -47,30 +42,48 @@ cmake_ninja_workdir = /Users/wangjialong/Desktop/Resouces/Software/stm32-min/bui
 #############################################
 # Order-only phony target for stm32-min.elf
 
-build cmake_object_order_depends_target_stm32-min.elf: phony || .
+build cmake_object_order_depends_target_stm32-min.elf: phony || cmake_object_order_depends_target_ens160 cmake_object_order_depends_target_i2c_lowlevel cmake_object_order_depends_target_uart2
 
-build CMakeFiles/stm32-min.elf.dir/src/main.c.obj: C_COMPILER__stm32-min.2eelf_unscanned_Debug /Users/wangjialong/Desktop/Resouces/Software/stm32-min/src/main.c || cmake_object_order_depends_target_stm32-min.elf
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles/stm32-min.elf.dir/src/main.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -O2 -g -ffunction-sections -fdata-sections -Wall -Wextra
+build CMakeFiles/stm32-min.elf.dir/modules/main.c.obj: C_COMPILER__stm32-min.2eelf_unscanned_ /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/main.c || cmake_object_order_depends_target_stm32-min.elf
+  DEP_FILE = CMakeFiles/stm32-min.elf.dir/modules/main.c.obj.d
+  FLAGS = -std=gnu11 --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -O2 -g -ffunction-sections -fdata-sections -Wall -Wextra
+  INCLUDES = -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/include
   OBJECT_DIR = CMakeFiles/stm32-min.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles/stm32-min.elf.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/stm32-min.elf.dir/modules
   TARGET_COMPILE_PDB = CMakeFiles/stm32-min.elf.dir/
   TARGET_PDB = stm32-min.elf.pdb
 
-build CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj: C_COMPILER__stm32-min.2eelf_unscanned_Debug /Users/wangjialong/Desktop/Resouces/Software/stm32-min/src/system_stub.c || cmake_object_order_depends_target_stm32-min.elf
-  CONFIG = Debug
-  DEP_FILE = CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -O2 -g -ffunction-sections -fdata-sections -Wall -Wextra
+build CMakeFiles/stm32-min.elf.dir/modules/system_stub.c.obj: C_COMPILER__stm32-min.2eelf_unscanned_ /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/system_stub.c || cmake_object_order_depends_target_stm32-min.elf
+  DEP_FILE = CMakeFiles/stm32-min.elf.dir/modules/system_stub.c.obj.d
+  FLAGS = -std=gnu11 --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -O2 -g -ffunction-sections -fdata-sections -Wall -Wextra
+  INCLUDES = -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/include
   OBJECT_DIR = CMakeFiles/stm32-min.elf.dir
-  OBJECT_FILE_DIR = CMakeFiles/stm32-min.elf.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/stm32-min.elf.dir/modules
   TARGET_COMPILE_PDB = CMakeFiles/stm32-min.elf.dir/
   TARGET_PDB = stm32-min.elf.pdb
 
-build CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj: ASM_COMPILER__stm32-min.2eelf_unscanned_Debug /Users/wangjialong/Desktop/Resouces/Software/stm32-min/startup/startup_stm32f446xx.s || cmake_object_order_depends_target_stm32-min.elf
-  CONFIG = Debug
+build CMakeFiles/stm32-min.elf.dir/modules/retarget.c.obj: C_COMPILER__stm32-min.2eelf_unscanned_ /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/retarget.c || cmake_object_order_depends_target_stm32-min.elf
+  DEP_FILE = CMakeFiles/stm32-min.elf.dir/modules/retarget.c.obj.d
+  FLAGS = -std=gnu11 --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -O2 -g -ffunction-sections -fdata-sections -Wall -Wextra
+  INCLUDES = -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/include
+  OBJECT_DIR = CMakeFiles/stm32-min.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/stm32-min.elf.dir/modules
+  TARGET_COMPILE_PDB = CMakeFiles/stm32-min.elf.dir/
+  TARGET_PDB = stm32-min.elf.pdb
+
+build CMakeFiles/stm32-min.elf.dir/modules/system_init.c.obj: C_COMPILER__stm32-min.2eelf_unscanned_ /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/system_init.c || cmake_object_order_depends_target_stm32-min.elf
+  DEP_FILE = CMakeFiles/stm32-min.elf.dir/modules/system_init.c.obj.d
+  FLAGS = -std=gnu11 --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -O2 -g -ffunction-sections -fdata-sections -Wall -Wextra
+  INCLUDES = -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/include
+  OBJECT_DIR = CMakeFiles/stm32-min.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/stm32-min.elf.dir/modules
+  TARGET_COMPILE_PDB = CMakeFiles/stm32-min.elf.dir/
+  TARGET_PDB = stm32-min.elf.pdb
+
+build CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj: ASM_COMPILER__stm32-min.2eelf_unscanned_ /Users/wangjialong/Desktop/Resouces/Software/stm32-min/startup/startup_stm32f446xx.s || cmake_object_order_depends_target_stm32-min.elf
   DEP_FILE = CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -O2 -g -ffunction-sections -fdata-sections -Wall -Wextra
+  FLAGS = --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -O2 -g -ffunction-sections -fdata-sections -Wall -Wextra
+  INCLUDES = -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/include
   OBJECT_DIR = CMakeFiles/stm32-min.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/stm32-min.elf.dir/startup
   TARGET_COMPILE_PDB = CMakeFiles/stm32-min.elf.dir/
@@ -84,10 +97,9 @@ build CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj: ASM_COMPIL
 #############################################
 # Link the executable stm32-min.elf
 
-build stm32-min.elf: C_EXECUTABLE_LINKER__stm32-min.2eelf_Debug CMakeFiles/stm32-min.elf.dir/src/main.c.obj CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj
-  CONFIG = Debug
-  FLAGS = -g
-  LINK_FLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -T/Users/wangjialong/Desktop/Resouces/Software/stm32-min/linker/STM32F446RETx_FLASH.ld -Wl,--gc-sections -Wl,-Map=stm32-min.map -specs=nosys.specs -nostartfiles
+build stm32-min.elf: C_EXECUTABLE_LINKER__stm32-min.2eelf_ CMakeFiles/stm32-min.elf.dir/modules/main.c.obj CMakeFiles/stm32-min.elf.dir/modules/system_stub.c.obj CMakeFiles/stm32-min.elf.dir/modules/retarget.c.obj CMakeFiles/stm32-min.elf.dir/modules/system_init.c.obj CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj | modules/i2c_lowlevel/libi2c_lowlevel.a modules/ens160/libens160.a modules/uart2/libuart2.a modules/i2c_lowlevel/libi2c_lowlevel.a || modules/ens160/libens160.a modules/i2c_lowlevel/libi2c_lowlevel.a modules/uart2/libuart2.a
+  LINK_FLAGS = --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -T/Users/wangjialong/Desktop/Resouces/Software/stm32-min/linker/STM32F446RETx_FLASH.ld -Wl,--gc-sections -Wl,-Map=stm32-min.map --specs=nano.specs -specs=nosys.specs -nostartfiles
+  LINK_LIBRARIES = modules/i2c_lowlevel/libi2c_lowlevel.a  modules/ens160/libens160.a  modules/uart2/libuart2.a  modules/i2c_lowlevel/libi2c_lowlevel.a
   OBJECT_DIR = CMakeFiles/stm32-min.elf.dir
   POST_BUILD = cd /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build && arm-none-eabi-objcopy -O ihex stm32-min.elf stm32-min.hex && arm-none-eabi-objcopy -O binary stm32-min.elf stm32-min.bin
   PRE_LINK = :
@@ -120,7 +132,208 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/wangjialong/Desktop/Resouces/Software/stm32-min/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target i2c_lowlevel
+
+
+#############################################
+# Order-only phony target for i2c_lowlevel
+
+build cmake_object_order_depends_target_i2c_lowlevel: phony || .
+
+build modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir/src/i2c_lowlevel.c.obj: C_COMPILER__i2c_lowlevel_unscanned_ /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/src/i2c_lowlevel.c || cmake_object_order_depends_target_i2c_lowlevel
+  DEP_FILE = modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir/src/i2c_lowlevel.c.obj.d
+  FLAGS = -std=gnu11 --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi
+  INCLUDES = -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/include
+  OBJECT_DIR = modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir
+  OBJECT_FILE_DIR = modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir/src
+  TARGET_COMPILE_PDB = modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir/i2c_lowlevel.pdb
+  TARGET_PDB = modules/i2c_lowlevel/libi2c_lowlevel.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target i2c_lowlevel
+
+
+#############################################
+# Link the static library modules/i2c_lowlevel/libi2c_lowlevel.a
+
+build modules/i2c_lowlevel/libi2c_lowlevel.a: C_STATIC_LIBRARY_LINKER__i2c_lowlevel_ modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir/src/i2c_lowlevel.c.obj
+  OBJECT_DIR = modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir/i2c_lowlevel.pdb
+  TARGET_FILE = modules/i2c_lowlevel/libi2c_lowlevel.a
+  TARGET_PDB = modules/i2c_lowlevel/libi2c_lowlevel.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build modules/i2c_lowlevel/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/i2c_lowlevel && /opt/homebrew/bin/ccmake -S/Users/wangjialong/Desktop/Resouces/Software/stm32-min -B/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build modules/i2c_lowlevel/edit_cache: phony modules/i2c_lowlevel/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build modules/i2c_lowlevel/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/i2c_lowlevel && /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/wangjialong/Desktop/Resouces/Software/stm32-min -B/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build modules/i2c_lowlevel/rebuild_cache: phony modules/i2c_lowlevel/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/wangjialong/Desktop/Resouces/Software/stm32-min/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ens160
+
+
+#############################################
+# Order-only phony target for ens160
+
+build cmake_object_order_depends_target_ens160: phony || cmake_object_order_depends_target_i2c_lowlevel
+
+build modules/ens160/CMakeFiles/ens160.dir/src/ens160.c.obj: C_COMPILER__ens160_unscanned_ /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/src/ens160.c || cmake_object_order_depends_target_ens160
+  DEP_FILE = modules/ens160/CMakeFiles/ens160.dir/src/ens160.c.obj.d
+  FLAGS = -std=gnu11 --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi
+  INCLUDES = -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/include -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/include
+  OBJECT_DIR = modules/ens160/CMakeFiles/ens160.dir
+  OBJECT_FILE_DIR = modules/ens160/CMakeFiles/ens160.dir/src
+  TARGET_COMPILE_PDB = modules/ens160/CMakeFiles/ens160.dir/ens160.pdb
+  TARGET_PDB = modules/ens160/libens160.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ens160
+
+
+#############################################
+# Link the static library modules/ens160/libens160.a
+
+build modules/ens160/libens160.a: C_STATIC_LIBRARY_LINKER__ens160_ modules/ens160/CMakeFiles/ens160.dir/src/ens160.c.obj || modules/i2c_lowlevel/libi2c_lowlevel.a
+  OBJECT_DIR = modules/ens160/CMakeFiles/ens160.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = modules/ens160/CMakeFiles/ens160.dir/ens160.pdb
+  TARGET_FILE = modules/ens160/libens160.a
+  TARGET_PDB = modules/ens160/libens160.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build modules/ens160/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/ens160 && /opt/homebrew/bin/ccmake -S/Users/wangjialong/Desktop/Resouces/Software/stm32-min -B/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build modules/ens160/edit_cache: phony modules/ens160/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build modules/ens160/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/ens160 && /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/wangjialong/Desktop/Resouces/Software/stm32-min -B/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build modules/ens160/rebuild_cache: phony modules/ens160/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/wangjialong/Desktop/Resouces/Software/stm32-min/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target uart2
+
+
+#############################################
+# Order-only phony target for uart2
+
+build cmake_object_order_depends_target_uart2: phony || .
+
+build modules/uart2/CMakeFiles/uart2.dir/src/uart2.c.obj: C_COMPILER__uart2_unscanned_ /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/src/uart2.c || cmake_object_order_depends_target_uart2
+  DEP_FILE = modules/uart2/CMakeFiles/uart2.dir/src/uart2.c.obj.d
+  FLAGS = -std=gnu11 --sysroot=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi
+  INCLUDES = -I/Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/include
+  OBJECT_DIR = modules/uart2/CMakeFiles/uart2.dir
+  OBJECT_FILE_DIR = modules/uart2/CMakeFiles/uart2.dir/src
+  TARGET_COMPILE_PDB = modules/uart2/CMakeFiles/uart2.dir/uart2.pdb
+  TARGET_PDB = modules/uart2/libuart2.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target uart2
+
+
+#############################################
+# Link the static library modules/uart2/libuart2.a
+
+build modules/uart2/libuart2.a: C_STATIC_LIBRARY_LINKER__uart2_ modules/uart2/CMakeFiles/uart2.dir/src/uart2.c.obj
+  OBJECT_DIR = modules/uart2/CMakeFiles/uart2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = modules/uart2/CMakeFiles/uart2.dir/uart2.pdb
+  TARGET_FILE = modules/uart2/libuart2.a
+  TARGET_PDB = modules/uart2/libuart2.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build modules/uart2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/uart2 && /opt/homebrew/bin/ccmake -S/Users/wangjialong/Desktop/Resouces/Software/stm32-min -B/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build modules/uart2/edit_cache: phony modules/uart2/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build modules/uart2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/uart2 && /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/wangjialong/Desktop/Resouces/Software/stm32-min -B/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build modules/uart2/rebuild_cache: phony modules/uart2/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build ens160: phony modules/ens160/libens160.a
+
+build i2c_lowlevel: phony modules/i2c_lowlevel/libi2c_lowlevel.a
+
+build libens160.a: phony modules/ens160/libens160.a
+
+build libi2c_lowlevel.a: phony modules/i2c_lowlevel/libi2c_lowlevel.a
+
+build libuart2.a: phony modules/uart2/libuart2.a
+
+build uart2: phony modules/uart2/libuart2.a
 
 # =============================================================================
 # Folder targets.
@@ -130,7 +343,28 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build
 
-build all: phony stm32-min.elf
+build all: phony stm32-min.elf modules/i2c_lowlevel/all modules/ens160/all modules/uart2/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/ens160
+
+build modules/ens160/all: phony modules/ens160/libens160.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/i2c_lowlevel
+
+build modules/i2c_lowlevel/all: phony modules/i2c_lowlevel/libi2c_lowlevel.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/uart2
+
+build modules/uart2/all: phony modules/uart2/libuart2.a
 
 # =============================================================================
 # Built-in targets
@@ -139,14 +373,14 @@ build all: phony stm32-min.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/cmake_install.cmake: RERUN_CMAKE | /Users/wangjialong/Desktop/Resouces/Software/stm32-min/CMakeLists.txt /Users/wangjialong/Desktop/Resouces/Software/stm32-min/cmake/arm-gcc-toolchain.cmake /opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-ASM.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectASMLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/4.1.1/CMakeASMCompiler.cmake CMakeFiles/4.1.1/CMakeCCompiler.cmake CMakeFiles/4.1.1/CMakeSystem.cmake
+build build.ninja /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/cmake_install.cmake /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/i2c_lowlevel/cmake_install.cmake /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/ens160/cmake_install.cmake /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/uart2/cmake_install.cmake: RERUN_CMAKE | /Users/wangjialong/Desktop/Resouces/Software/stm32-min/CMakeLists.txt /Users/wangjialong/Desktop/Resouces/Software/stm32-min/cmake/arm-gcc-toolchain.cmake /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/CMakeLists.txt /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/CMakeLists.txt /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-ASM.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectASMLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/4.1.1/CMakeASMCompiler.cmake CMakeFiles/4.1.1/CMakeCCompiler.cmake CMakeFiles/4.1.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/wangjialong/Desktop/Resouces/Software/stm32-min/CMakeLists.txt /Users/wangjialong/Desktop/Resouces/Software/stm32-min/cmake/arm-gcc-toolchain.cmake /opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-ASM.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectASMLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/4.1.1/CMakeASMCompiler.cmake CMakeFiles/4.1.1/CMakeCCompiler.cmake CMakeFiles/4.1.1/CMakeSystem.cmake: phony
+build /Users/wangjialong/Desktop/Resouces/Software/stm32-min/CMakeLists.txt /Users/wangjialong/Desktop/Resouces/Software/stm32-min/cmake/arm-gcc-toolchain.cmake /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/ens160/CMakeLists.txt /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/i2c_lowlevel/CMakeLists.txt /Users/wangjialong/Desktop/Resouces/Software/stm32-min/modules/uart2/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c /opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestASMCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-ASM.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-C.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectASMLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/4.1.1/CMakeASMCompiler.cmake CMakeFiles/4.1.1/CMakeCCompiler.cmake CMakeFiles/4.1.1/CMakeSystem.cmake: phony
 
 
 #############################################

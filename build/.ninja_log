@@ -1,7 +1,13 @@
 # ninja log v7
-1	25	1758741802704001693	CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj	e9ba5fe6e716a35
-1	57	1758741802703797317	CMakeFiles/stm32-min.elf.dir/src/system_stub.c.obj	b4068c95f52ea096
-1	59	1758741802703397358	CMakeFiles/stm32-min.elf.dir/src/main.c.obj	317a122f2be55a48
-59	188	1758741802762200739	stm32-min.elf	a2bc1b28f090ed23
-5	186	1758743589745501722	CMakeFiles/stm32-min.elf.dir/src/main.c.obj	317a122f2be55a48
-186	242	1758743589926513531	stm32-min.elf	a2bc1b28f090ed23
+5	31	1758751757622592795	CMakeFiles/stm32-min.elf.dir/startup/startup_stm32f446xx.s.obj	e8897219270bc
+1	68	1758751757618661391	modules/uart2/CMakeFiles/uart2.dir/src/uart2.c.obj	c681b4c1565dac4c
+1	69	1758751757617991678	modules/i2c_lowlevel/CMakeFiles/i2c_lowlevel.dir/src/i2c_lowlevel.c.obj	69abfd3f2daa924b
+1	69	1758751757618431556	modules/ens160/CMakeFiles/ens160.dir/src/ens160.c.obj	716c37160c921a47
+4	70	1758751757621748081	CMakeFiles/stm32-min.elf.dir/modules/system_init.c.obj	b808b1d9d14f7fa5
+3	75	1758751757620026026	CMakeFiles/stm32-min.elf.dir/modules/retarget.c.obj	5c8a2d56b0dccb10
+2	80	1758751757618859309	CMakeFiles/stm32-min.elf.dir/modules/main.c.obj	f3e20417237e6db0
+2	84	1758751757619045144	CMakeFiles/stm32-min.elf.dir/modules/system_stub.c.obj	f60d668695ec5704
+68	107	1758751757685272092	modules/uart2/libuart2.a	9e294739db66e312
+69	107	1758751757685922472	modules/i2c_lowlevel/libi2c_lowlevel.a	81726eda9e85da29
+107	140	1758751757724263172	modules/ens160/libens160.a	7abe7ec270cf14e
+140	193	1758751757756870663	stm32-min.elf	8ac85af3f7bb8474

@@ -1,3 +1,6 @@
 {
-    "idf.port": "/dev/tty.usbmodem212303"
+    "idf.port": "/dev/tty.usbmodem212303",
+    "files.associations": {
+        "unistd.h": "c"
+    }
 }

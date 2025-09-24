@@ -23,9 +23,9 @@ set(CMAKE_C_COMPILER_ARCHITECTURE_ID "")
 
 
 
-set(CMAKE_AR "arm-none-eabi-ar")
+set(CMAKE_AR "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ar")
 set(CMAKE_C_COMPILER_AR "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ar")
-set(CMAKE_RANLIB "arm-none-eabi-ranlib")
+set(CMAKE_RANLIB "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ranlib")
 set(CMAKE_C_COMPILER_RANLIB "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ranlib")
 set(CMAKE_LINKER "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ld")
 set(CMAKE_LINKER_LINK "")

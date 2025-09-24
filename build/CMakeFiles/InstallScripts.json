@@ -1,7 +1,10 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/cmake_install.cmake"
+		"/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/cmake_install.cmake",
+		"/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/i2c_lowlevel/cmake_install.cmake",
+		"/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/ens160/cmake_install.cmake",
+		"/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/modules/uart2/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
