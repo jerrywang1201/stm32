@@ -20,6 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -42,6 +44,8 @@ events:
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/uname"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/uname"
       - "/opt/homebrew/bin/uname"
       - "/opt/homebrew/sbin/uname"
       - "/opt/local/bin/uname"
@@ -52,201 +56,8 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/bin"
-        - "/opt/homebrew/sbin"
-        - "/opt/local/bin"
-        - "/opt/local/sbin"
-        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/X11/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Applications/VMware Fusion.app/Contents/Public"
-        - "/usr/local/share/dotnet"
-        - "~/.dotnet/tools"
-        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
-        - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "cmake/toolchain-gcc-arm-none-eabi.cmake:5 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:149 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "ARM_CC"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "arm-none-eabi-gcc"
-    candidate_directories:
-      - "/opt/homebrew/bin/"
-      - "/opt/homebrew/sbin/"
-      - "/opt/local/bin/"
-      - "/opt/local/sbin/"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/opt/X11/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Applications/VMware Fusion.app/Contents/Public/"
-      - "/usr/local/share/dotnet/"
-      - "/Users/wangjialong/.dotnet/tools/"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-gcc"
-    search_context:
-      ENV{PATH}:
-        - "/opt/homebrew/bin"
-        - "/opt/homebrew/sbin"
-        - "/opt/local/bin"
-        - "/opt/local/sbin"
-        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/X11/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Applications/VMware Fusion.app/Contents/Public"
-        - "/usr/local/share/dotnet"
-        - "~/.dotnet/tools"
-        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
-        - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "cmake/toolchain-gcc-arm-none-eabi.cmake:6 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:149 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "ARM_CXX"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "arm-none-eabi-g++"
-    candidate_directories:
-      - "/opt/homebrew/bin/"
-      - "/opt/homebrew/sbin/"
-      - "/opt/local/bin/"
-      - "/opt/local/sbin/"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/opt/X11/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Applications/VMware Fusion.app/Contents/Public/"
-      - "/usr/local/share/dotnet/"
-      - "/Users/wangjialong/.dotnet/tools/"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-g++"
-    search_context:
-      ENV{PATH}:
-        - "/opt/homebrew/bin"
-        - "/opt/homebrew/sbin"
-        - "/opt/local/bin"
-        - "/opt/local/sbin"
-        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/X11/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Applications/VMware Fusion.app/Contents/Public"
-        - "/usr/local/share/dotnet"
-        - "~/.dotnet/tools"
-        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
-        - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "cmake/toolchain-gcc-arm-none-eabi.cmake:7 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:149 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "ARM_AS"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "arm-none-eabi-gcc"
-    candidate_directories:
-      - "/opt/homebrew/bin/"
-      - "/opt/homebrew/sbin/"
-      - "/opt/local/bin/"
-      - "/opt/local/sbin/"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/opt/X11/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Applications/VMware Fusion.app/Contents/Public/"
-      - "/usr/local/share/dotnet/"
-      - "/Users/wangjialong/.dotnet/tools/"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-gcc"
-    search_context:
-      ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -272,10 +83,10 @@ events:
     kind: "find-v1"
     backtrace:
       - "cmake/toolchain-gcc-arm-none-eabi.cmake:8 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:149 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
-    variable: "ARM_AR"
+    variable: "CMAKE_C_COMPILER"
     description: "Path to a program."
     settings:
       SearchFramework: "FIRST"
@@ -286,8 +97,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-none-eabi-ar"
+      - "arm-none-eabi-gcc"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -309,9 +122,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-ar"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -337,10 +152,10 @@ events:
     kind: "find-v1"
     backtrace:
       - "cmake/toolchain-gcc-arm-none-eabi.cmake:9 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:149 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
-    variable: "ARM_OBJCOPY"
+    variable: "CMAKE_CXX_COMPILER"
     description: "Path to a program."
     settings:
       SearchFramework: "FIRST"
@@ -351,8 +166,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-none-eabi-objcopy"
+      - "arm-none-eabi-g++"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -374,9 +191,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-objcopy"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-g++"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -402,10 +221,10 @@ events:
     kind: "find-v1"
     backtrace:
       - "cmake/toolchain-gcc-arm-none-eabi.cmake:10 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:149 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
-    variable: "ARM_OBJDUMP"
+    variable: "CMAKE_ASM_COMPILER"
     description: "Path to a program."
     settings:
       SearchFramework: "FIRST"
@@ -416,8 +235,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-none-eabi-objdump"
+      - "arm-none-eabi-gcc"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -439,9 +260,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-objdump"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -467,10 +290,10 @@ events:
     kind: "find-v1"
     backtrace:
       - "cmake/toolchain-gcc-arm-none-eabi.cmake:11 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:149 (include)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
-    variable: "ARM_SIZE"
+    variable: "CMAKE_AR"
     description: "Path to a program."
     settings:
       SearchFramework: "FIRST"
@@ -481,8 +304,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-none-eabi-size"
+      - "arm-none-eabi-ar"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -504,9 +329,149 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-size"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ar"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "cmake/toolchain-gcc-arm-none-eabi.cmake:12 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-objcopy"
+    candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/wangjialong/.dotnet/tools/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "cmake/toolchain-gcc-arm-none-eabi.cmake:13 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:152 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_SIZE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-size"
+    candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/wangjialong/.dotnet/tools/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-size"
+    search_context:
+      ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -557,6 +522,8 @@ events:
       - "ninja"
       - "samu"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -579,10 +546,18 @@ events:
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/ninja-build"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/ninja"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/samu"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/ninja-build"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/ninja"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/samu"
       - "/opt/homebrew/bin/ninja-build"
     found: "/opt/homebrew/bin/ninja"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -631,6 +606,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -661,14 +638,24 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-      Compiler: /opt/homebrew/bin/arm-none-eabi-gcc 
+      Compiler: /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc 
       Build flags: 
       Id flags:  
       
       The output was:
       1
-      /opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-ld: cannot find crt0.o: No such file or directory
-      /opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-ld: cannot find -lc: No such file or directory
+      /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      (.text.exit+0x28): undefined reference to `_exit'
+      /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      (.text._close_r+0x18): undefined reference to `_close'
+      /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      (.text._lseek_r+0x24): undefined reference to `_lseek'
+      /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      (.text._read_r+0x24): undefined reference to `_read'
+      /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      (.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/ld: /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      (.text._write_r+0x24): undefined reference to `_write'
       collect2: error: ld returned 1 exit status
       
       
@@ -699,6 +686,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -729,7 +718,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /opt/homebrew/bin/arm-none-eabi-gcc 
+      Compiler: /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc 
       Build flags: 
       Id flags: -c 
       
@@ -742,72 +731,6 @@ events:
       The C compiler identification is GNU, found in:
         /Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/4.1.1/CompilerIdC/CMakeCCompilerId.o
       
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_AR"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "arm-none-eabi-ar"
-      - "ar"
-    candidate_directories:
-      - "/opt/homebrew/bin/"
-      - "/opt/homebrew/sbin/"
-      - "/opt/local/bin/"
-      - "/opt/local/sbin/"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/opt/X11/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Applications/VMware Fusion.app/Contents/Public/"
-      - "/usr/local/share/dotnet/"
-      - "/Users/wangjialong/.dotnet/tools/"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-ar"
-    search_context:
-      ENV{PATH}:
-        - "/opt/homebrew/bin"
-        - "/opt/homebrew/sbin"
-        - "/opt/local/bin"
-        - "/opt/local/sbin"
-        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/X11/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Applications/VMware Fusion.app/Contents/Public"
-        - "/usr/local/share/dotnet"
-        - "~/.dotnet/tools"
-        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
-        - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities"
   -
     kind: "find-v1"
     backtrace:
@@ -829,6 +752,8 @@ events:
       - "arm-none-eabi-ranlib"
       - "ranlib"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -850,9 +775,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-ranlib"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -895,6 +822,8 @@ events:
       - "arm-none-eabi-strip"
       - "strip"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -916,9 +845,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-strip"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-strip"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -961,6 +892,8 @@ events:
       - "arm-none-eabi-ld"
       - "ld"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -982,9 +915,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-ld"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ld"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1027,6 +962,8 @@ events:
       - "arm-none-eabi-nm"
       - "nm"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1048,9 +985,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-nm"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-nm"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1093,6 +1032,8 @@ events:
       - "arm-none-eabi-objdump"
       - "objdump"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1114,75 +1055,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-objdump"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-objdump"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/bin"
-        - "/opt/homebrew/sbin"
-        - "/opt/local/bin"
-        - "/opt/local/sbin"
-        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/X11/bin"
-        - "/Library/Apple/usr/bin"
-        - "/Applications/VMware Fusion.app/Contents/Public"
-        - "/usr/local/share/dotnet"
-        - "~/.dotnet/tools"
-        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
-        - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
-      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_OBJCOPY"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "arm-none-eabi-objcopy"
-      - "objcopy"
-    candidate_directories:
-      - "/opt/homebrew/bin/"
-      - "/opt/homebrew/sbin/"
-      - "/opt/local/bin/"
-      - "/opt/local/sbin/"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/opt/X11/bin/"
-      - "/Library/Apple/usr/bin/"
-      - "/Applications/VMware Fusion.app/Contents/Public/"
-      - "/usr/local/share/dotnet/"
-      - "/Users/wangjialong/.dotnet/tools/"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-objcopy"
-    search_context:
-      ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1225,6 +1102,8 @@ events:
       - "arm-none-eabi-readelf"
       - "readelf"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1246,9 +1125,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-readelf"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-readelf"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1291,6 +1172,8 @@ events:
       - "arm-none-eabi-dlltool"
       - "dlltool"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1313,6 +1196,8 @@ events:
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-dlltool"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-dlltool"
       - "/opt/homebrew/bin/arm-none-eabi-dlltool"
       - "/opt/homebrew/sbin/arm-none-eabi-dlltool"
       - "/opt/local/bin/arm-none-eabi-dlltool"
@@ -1334,6 +1219,8 @@ events:
       - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-dlltool"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-dlltool"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-dlltool"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/dlltool"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/dlltool"
       - "/opt/homebrew/bin/dlltool"
       - "/opt/homebrew/sbin/dlltool"
       - "/opt/local/bin/dlltool"
@@ -1358,6 +1245,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1400,6 +1289,8 @@ events:
       - "arm-none-eabi-addr2line"
       - "addr2line"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1421,9 +1312,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
-    found: "/opt/homebrew/bin/arm-none-eabi-addr2line"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-addr2line"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1466,6 +1359,8 @@ events:
       - "arm-none-eabi-tapi"
       - "tapi"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1488,6 +1383,8 @@ events:
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-tapi"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-tapi"
       - "/opt/homebrew/bin/arm-none-eabi-tapi"
       - "/opt/homebrew/sbin/arm-none-eabi-tapi"
       - "/opt/local/bin/arm-none-eabi-tapi"
@@ -1509,6 +1406,8 @@ events:
       - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-tapi"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-tapi"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-tapi"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/tapi"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/tapi"
       - "/opt/homebrew/bin/tapi"
       - "/opt/homebrew/sbin/tapi"
       - "/opt/local/bin/tapi"
@@ -1533,6 +1432,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1572,11 +1473,13 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-none-eabi-gcc-ar-15.2"
-      - "arm-none-eabi-gcc-ar-15"
-      - "arm-none-eabi-gcc-ar15"
+      - "arm-none-eabi-gcc-ar-14.2"
+      - "arm-none-eabi-gcc-ar-14"
+      - "arm-none-eabi-gcc-ar14"
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1599,72 +1502,80 @@ events:
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
-      - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ar-15.2"
-      - "/opt/local/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/opt/local/sbin/arm-none-eabi-gcc-ar-15.2"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/usr/local/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/usr/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/usr/sbin/arm-none-eabi-gcc-ar-15.2"
-      - "/sbin/arm-none-eabi-gcc-ar-15.2"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/opt/X11/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ar-15.2"
-      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ar-15.2"
-      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-15.2"
-      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ar-15.2"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ar-15.2"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ar-15.2"
-      - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-15"
-      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ar-15"
-      - "/opt/local/bin/arm-none-eabi-gcc-ar-15"
-      - "/opt/local/sbin/arm-none-eabi-gcc-ar-15"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ar-15"
-      - "/usr/local/bin/arm-none-eabi-gcc-ar-15"
-      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ar-15"
-      - "/usr/bin/arm-none-eabi-gcc-ar-15"
-      - "/bin/arm-none-eabi-gcc-ar-15"
-      - "/usr/sbin/arm-none-eabi-gcc-ar-15"
-      - "/sbin/arm-none-eabi-gcc-ar-15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ar-15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ar-15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ar-15"
-      - "/opt/X11/bin/arm-none-eabi-gcc-ar-15"
-      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ar-15"
-      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ar-15"
-      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-15"
-      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ar-15"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ar-15"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ar-15"
-      - "/opt/homebrew/bin/arm-none-eabi-gcc-ar15"
-      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ar15"
-      - "/opt/local/bin/arm-none-eabi-gcc-ar15"
-      - "/opt/local/sbin/arm-none-eabi-gcc-ar15"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ar15"
-      - "/usr/local/bin/arm-none-eabi-gcc-ar15"
-      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ar15"
-      - "/usr/bin/arm-none-eabi-gcc-ar15"
-      - "/bin/arm-none-eabi-gcc-ar15"
-      - "/usr/sbin/arm-none-eabi-gcc-ar15"
-      - "/sbin/arm-none-eabi-gcc-ar15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ar15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ar15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ar15"
-      - "/opt/X11/bin/arm-none-eabi-gcc-ar15"
-      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ar15"
-      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ar15"
-      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar15"
-      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ar15"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ar15"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ar15"
-    found: "/opt/homebrew/bin/arm-none-eabi-gcc-ar"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ar-14.2"
+      - "/opt/local/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/opt/local/sbin/arm-none-eabi-gcc-ar-14.2"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/usr/local/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/usr/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/usr/sbin/arm-none-eabi-gcc-ar-14.2"
+      - "/sbin/arm-none-eabi-gcc-ar-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/opt/X11/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ar-14.2"
+      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ar-14.2"
+      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-14.2"
+      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ar-14.2"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ar-14.2"
+      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ar-14.2"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ar-14"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ar-14"
+      - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-14"
+      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ar-14"
+      - "/opt/local/bin/arm-none-eabi-gcc-ar-14"
+      - "/opt/local/sbin/arm-none-eabi-gcc-ar-14"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ar-14"
+      - "/usr/local/bin/arm-none-eabi-gcc-ar-14"
+      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ar-14"
+      - "/usr/bin/arm-none-eabi-gcc-ar-14"
+      - "/bin/arm-none-eabi-gcc-ar-14"
+      - "/usr/sbin/arm-none-eabi-gcc-ar-14"
+      - "/sbin/arm-none-eabi-gcc-ar-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ar-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ar-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ar-14"
+      - "/opt/X11/bin/arm-none-eabi-gcc-ar-14"
+      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ar-14"
+      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ar-14"
+      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar-14"
+      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ar-14"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ar-14"
+      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ar-14"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ar14"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ar14"
+      - "/opt/homebrew/bin/arm-none-eabi-gcc-ar14"
+      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ar14"
+      - "/opt/local/bin/arm-none-eabi-gcc-ar14"
+      - "/opt/local/sbin/arm-none-eabi-gcc-ar14"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ar14"
+      - "/usr/local/bin/arm-none-eabi-gcc-ar14"
+      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ar14"
+      - "/usr/bin/arm-none-eabi-gcc-ar14"
+      - "/bin/arm-none-eabi-gcc-ar14"
+      - "/usr/sbin/arm-none-eabi-gcc-ar14"
+      - "/sbin/arm-none-eabi-gcc-ar14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ar14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ar14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ar14"
+      - "/opt/X11/bin/arm-none-eabi-gcc-ar14"
+      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ar14"
+      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ar14"
+      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ar14"
+      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ar14"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ar14"
+      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ar14"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1704,11 +1615,13 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "arm-none-eabi-gcc-ranlib-15.2"
-      - "arm-none-eabi-gcc-ranlib-15"
-      - "arm-none-eabi-gcc-ranlib15"
+      - "arm-none-eabi-gcc-ranlib-14.2"
+      - "arm-none-eabi-gcc-ranlib-14"
+      - "arm-none-eabi-gcc-ranlib14"
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1731,72 +1644,80 @@ events:
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
-      - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/opt/local/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/opt/local/sbin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/usr/local/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/usr/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/usr/sbin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/sbin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/opt/X11/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ranlib-15.2"
-      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ranlib-15.2"
-      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-15.2"
-      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ranlib-15.2"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ranlib-15.2"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ranlib-15.2"
-      - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ranlib-15"
-      - "/opt/local/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/opt/local/sbin/arm-none-eabi-gcc-ranlib-15"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/usr/local/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/usr/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/usr/sbin/arm-none-eabi-gcc-ranlib-15"
-      - "/sbin/arm-none-eabi-gcc-ranlib-15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/opt/X11/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ranlib-15"
-      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ranlib-15"
-      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-15"
-      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ranlib-15"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ranlib-15"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ranlib-15"
-      - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib15"
-      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ranlib15"
-      - "/opt/local/bin/arm-none-eabi-gcc-ranlib15"
-      - "/opt/local/sbin/arm-none-eabi-gcc-ranlib15"
-      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ranlib15"
-      - "/usr/local/bin/arm-none-eabi-gcc-ranlib15"
-      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ranlib15"
-      - "/usr/bin/arm-none-eabi-gcc-ranlib15"
-      - "/bin/arm-none-eabi-gcc-ranlib15"
-      - "/usr/sbin/arm-none-eabi-gcc-ranlib15"
-      - "/sbin/arm-none-eabi-gcc-ranlib15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ranlib15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ranlib15"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ranlib15"
-      - "/opt/X11/bin/arm-none-eabi-gcc-ranlib15"
-      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ranlib15"
-      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ranlib15"
-      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib15"
-      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ranlib15"
-      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ranlib15"
-      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ranlib15"
-    found: "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/opt/local/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/opt/local/sbin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/usr/local/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/usr/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/usr/sbin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/sbin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/opt/X11/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ranlib-14.2"
+      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ranlib-14.2"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ranlib-14"
+      - "/opt/local/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/opt/local/sbin/arm-none-eabi-gcc-ranlib-14"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/usr/local/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/usr/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/usr/sbin/arm-none-eabi-gcc-ranlib-14"
+      - "/sbin/arm-none-eabi-gcc-ranlib-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/opt/X11/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ranlib-14"
+      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib-14"
+      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ranlib-14"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ranlib-14"
+      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ranlib-14"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ranlib14"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ranlib14"
+      - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib14"
+      - "/opt/homebrew/sbin/arm-none-eabi-gcc-ranlib14"
+      - "/opt/local/bin/arm-none-eabi-gcc-ranlib14"
+      - "/opt/local/sbin/arm-none-eabi-gcc-ranlib14"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/arm-none-eabi-gcc-ranlib14"
+      - "/usr/local/bin/arm-none-eabi-gcc-ranlib14"
+      - "/System/Cryptexes/App/usr/bin/arm-none-eabi-gcc-ranlib14"
+      - "/usr/bin/arm-none-eabi-gcc-ranlib14"
+      - "/bin/arm-none-eabi-gcc-ranlib14"
+      - "/usr/sbin/arm-none-eabi-gcc-ranlib14"
+      - "/sbin/arm-none-eabi-gcc-ranlib14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/arm-none-eabi-gcc-ranlib14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/arm-none-eabi-gcc-ranlib14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/arm-none-eabi-gcc-ranlib14"
+      - "/opt/X11/bin/arm-none-eabi-gcc-ranlib14"
+      - "/Library/Apple/usr/bin/arm-none-eabi-gcc-ranlib14"
+      - "/Applications/VMware Fusion.app/Contents/Public/arm-none-eabi-gcc-ranlib14"
+      - "/usr/local/share/dotnet/arm-none-eabi-gcc-ranlib14"
+      - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ranlib14"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ranlib14"
+      - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ranlib14"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1826,8 +1747,8 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-      arm-none-eabi-gcc (GCC) 15.2.0
-      Copyright (C) 2025 Free Software Foundation, Inc.
+      arm-none-eabi-gcc (xPack GNU Arm Embedded GCC arm64) 14.2.1 20241119
+      Copyright (C) 2024 Free Software Foundation, Inc.
       This is free software; see the source for copying conditions.  There is NO
       warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
       
@@ -1854,6 +1775,8 @@ events:
       - "arm-none-eabi-gcc-ar"
       - "arm-none-eabi-gcc-ar"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1876,6 +1799,8 @@ events:
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ar-"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/sbin/arm-none-eabi-gcc-ar-"
       - "/opt/local/bin/arm-none-eabi-gcc-ar-"
@@ -1897,6 +1822,8 @@ events:
       - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ar-"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ar-"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ar-"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ar-"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ar-"
       - "/opt/homebrew/sbin/arm-none-eabi-gcc-ar-"
       - "/opt/local/bin/arm-none-eabi-gcc-ar-"
@@ -1918,9 +1845,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ar-"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ar-"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ar-"
-    found: "/opt/homebrew/bin/arm-none-eabi-gcc-ar"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -1965,6 +1894,8 @@ events:
       - "arm-none-eabi-gcc-ranlib"
       - "arm-none-eabi-gcc-ranlib"
     candidate_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/opt/local/bin/"
@@ -1987,6 +1918,8 @@ events:
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/"
     searched_directories:
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ranlib-"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/sbin/arm-none-eabi-gcc-ranlib-"
       - "/opt/local/bin/arm-none-eabi-gcc-ranlib-"
@@ -2008,6 +1941,8 @@ events:
       - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ranlib-"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ranlib-"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ranlib-"
+      - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ranlib-"
+      - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib-"
       - "/opt/homebrew/sbin/arm-none-eabi-gcc-ranlib-"
       - "/opt/local/bin/arm-none-eabi-gcc-ranlib-"
@@ -2029,9 +1964,11 @@ events:
       - "/Users/wangjialong/.dotnet/tools/arm-none-eabi-gcc-ranlib-"
       - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/arm-none-eabi-gcc-ranlib-"
       - "/Users/wangjialong/Applications/iTerm.app/Contents/Resources/utilities/arm-none-eabi-gcc-ranlib-"
-    found: "/opt/homebrew/bin/arm-none-eabi-gcc-ranlib"
+    found: "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin"
+        - "/Users/wangjialong/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/<ver>/.content/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/opt/local/bin"
@@ -2062,8 +1999,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/CMakeScratch/TryCompile-ye3qWO"
-      binary: "/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/CMakeScratch/TryCompile-ye3qWO"
+      source: "/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/CMakeScratch/TryCompile-fjQsg0"
+      binary: "/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/CMakeScratch/TryCompile-fjQsg0"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -2072,38 +2009,42 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/CMakeScratch/TryCompile-ye3qWO'
+        Change Dir: '/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/CMakeScratch/TryCompile-fjQsg0'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_274e7
-        [1/2] /opt/homebrew/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_e53b9
+        [1/2] /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
-        COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
+        COLLECT_GCC=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
-        Configured with: ../configure --target=arm-none-eabi --prefix=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0 --infodir=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/share/info/arm-none-eabi --disable-nls --without-headers --with-as=/opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-as --with-ld=/opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-ld --enable-languages=c,c++,objc,lto --enable-lto --enable-multilib --with-multilib-list=aprofile,rmprofile --with-system-zlib --with-zstd --disable-debug --disable-dependency-tracking --prefix=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0 --libdir=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib
+        Configured with: /Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/sources/gcc/configure --prefix=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/application --with-sysroot=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/application/arm-none-eabi --with-native-system-header-dir=/include --infodir=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install/share/info --mandir=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install/share/man --htmldir=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install/share/html --pdfdir=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install/share/pdf --build=aarch64-apple-darwin20.6.0 --host=aarch64-apple-darwin20.6.0 --target=arm-none-eabi --disable-nls --disable-shared --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-gmp=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install --with-newlib --with-pkgversion='xPack GNU Arm Embedded GCC arm64' --with-gnu-as --with-gnu-ld --with-system-zlib --with-headers=yes --enable-multilib --with-multilib-list=aprofile,rmprofile
         Thread model: single
         Supported LTO compression algorithms: zlib zstd
-        gcc version 15.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_274e7.dir/'
-         /opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/libexec/gcc/arm-none-eabi/15.2.0/cc1 -quiet -v -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_274e7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/rj/1zgtr70j3lb03hztfp7t7tlc0000gn/T//ccFfE3Kg.s
-        GNU C23 (GCC) version 15.2.0 (arm-none-eabi)
-        	compiled by GNU C version Apple LLVM 17.0.0 (clang-1700.3.19.1), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        gcc version 14.2.1 20241119 (xPack GNU Arm Embedded GCC arm64) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b9.dir/'
+         /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -iprefix /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e53b9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/rj/1zgtr70j3lb03hztfp7t7tlc0000gn/T//ccyQ9Pqs.s
+        GNU C17 (xPack GNU Arm Embedded GCC arm64) version 14.2.1 20241119 (arm-none-eabi)
+        	compiled by GNU C version xPack arm64 Clang 16.0.6 (https://github.com/xpack-dev-tools/clang-xpack dc931199b57bd035ecdbdf37077b4f64bd04ccab), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/sys-include"
-        ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"
+        ignoring nonexistent directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"
+        ignoring duplicate directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"
+        ignoring duplicate directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include
-         /opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include-fixed
+         /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/include
+         /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed
+         /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include
         End of search list.
-        Compiler executable checksum: 3667341c96678119910ea295191fd11e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_274e7.dir/'
-         /opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj /var/folders/rj/1zgtr70j3lb03hztfp7t7tlc0000gn/T//ccFfE3Kg.s
-        GNU assembler version 2.45 (arm-none-eabi) using BFD version (GNU Binutils) 2.45
-        COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/libexec/gcc/arm-none-eabi/15.2.0/:/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/libexec/gcc/arm-none-eabi/15.2.0/:/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/libexec/gcc/arm-none-eabi/:/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/:/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/
-        LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /opt/homebrew/bin/cmake -E rm -f libcmTC_274e7.a && /opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_274e7.a  CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj && /opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_274e7.a && /opt/homebrew/bin/cmake -E touch libcmTC_274e7.a && :
+        Compiler executable checksum: 22ecb3ba0695dd63b6b4344fbf626903
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b9.dir/'
+         /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj /var/folders/rj/1zgtr70j3lb03hztfp7t7tlc0000gn/T//ccyQ9Pqs.s
+        GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (xPack GNU Arm Embedded GCC arm64) 2.43.1.20241119
+        COMPILER_PATH=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../libexec/gcc/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /opt/homebrew/bin/cmake -E rm -f libcmTC_e53b9.a && /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ar qc libcmTC_e53b9.a  CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj && /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ranlib libcmTC_e53b9.a && /opt/homebrew/bin/cmake -E touch libcmTC_e53b9.a && :
         
       exitCode: 0
   -
@@ -2116,12 +2057,14 @@ events:
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include]
-          add: [/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include-fixed]
+          add: [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
+          add: [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+          add: [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         end of search list found
-        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include]
-        collapse include dir [/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include-fixed] ==> [/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include-fixed]
-        implicit include dirs: [/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include;/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include-fixed]
+        collapse include dir [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/include] ==> [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/lib/gcc/arm-none-eabi/14.2.1/include]
+        collapse include dir [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed] ==> [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+        collapse include dir [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include] ==> [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/arm-none-eabi/include]
+        implicit include dirs: [/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/lib/gcc/arm-none-eabi/14.2.1/include;/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/lib/gcc/arm-none-eabi/14.2.1/include-fixed;/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/arm-none-eabi/include]
       
       
   -
@@ -2134,38 +2077,42 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/CMakeScratch/TryCompile-ye3qWO']
+        ignore line: [Change Dir: '/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/CMakeFiles/CMakeScratch/TryCompile-fjQsg0']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_274e7]
-        ignore line: [[1/2] /opt/homebrew/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_e53b9]
+        ignore line: [[1/2] /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc   -v -o CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc]
+        ignore line: [COLLECT_GCC=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
-        ignore line: [Configured with: ../configure --target=arm-none-eabi --prefix=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0 --infodir=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/share/info/arm-none-eabi --disable-nls --without-headers --with-as=/opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-as --with-ld=/opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-ld --enable-languages=c,c++,objc,lto --enable-lto --enable-multilib --with-multilib-list=aprofile,rmprofile --with-system-zlib --with-zstd --disable-debug --disable-dependency-tracking --prefix=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0 --libdir=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib]
+        ignore line: [Configured with: /Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/sources/gcc/configure --prefix=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/application --with-sysroot=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/application/arm-none-eabi --with-native-system-header-dir=/include --infodir=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install/share/info --mandir=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install/share/man --htmldir=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install/share/html --pdfdir=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install/share/pdf --build=aarch64-apple-darwin20.6.0 --host=aarch64-apple-darwin20.6.0 --target=arm-none-eabi --disable-nls --disable-shared --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-gmp=/Users/ilg/actions-runners/xpack-dev-tools/_work/arm-none-eabi-gcc-xpack/arm-none-eabi-gcc-xpack/build-assets/build/darwin-arm64/aarch64-apple-darwin20.6.0/install --with-newlib --with-pkgversion='xPack GNU Arm Embedded GCC arm64' --with-gnu-as --with-gnu-ld --with-system-zlib --with-headers=yes --enable-multilib --with-multilib-list=aprofile,rmprofile]
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 15.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_274e7.dir/']
-        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/libexec/gcc/arm-none-eabi/15.2.0/cc1 -quiet -v -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_274e7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/rj/1zgtr70j3lb03hztfp7t7tlc0000gn/T//ccFfE3Kg.s]
-        ignore line: [GNU C23 (GCC) version 15.2.0 (arm-none-eabi)]
-        ignore line: [	compiled by GNU C version Apple LLVM 17.0.0 (clang-1700.3.19.1)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: [gcc version 14.2.1 20241119 (xPack GNU Arm Embedded GCC arm64) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b9.dir/']
+        ignore line: [ /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../libexec/gcc/arm-none-eabi/14.2.1/cc1 -quiet -v -iprefix /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/ -isysroot /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi -D__USES_INITFINI__ /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e53b9.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -version -o /var/folders/rj/1zgtr70j3lb03hztfp7t7tlc0000gn/T//ccyQ9Pqs.s]
+        ignore line: [GNU C17 (xPack GNU Arm Embedded GCC arm64) version 14.2.1 20241119 (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version xPack arm64 Clang 16.0.6 (https://github.com/xpack-dev-tools/clang-xpack dc931199b57bd035ecdbdf37077b4f64bd04ccab)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/sys-include"]
-        ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include"]
+        ignore line: [ignoring nonexistent directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring duplicate directory "/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include]
-        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/include-fixed]
+        ignore line: [ /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/include]
+        ignore line: [ /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/include-fixed]
+        ignore line: [ /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: 3667341c96678119910ea295191fd11e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_274e7.dir/']
-        ignore line: [ /opt/homebrew/opt/arm-none-eabi-binutils/bin/arm-none-eabi-as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj /var/folders/rj/1zgtr70j3lb03hztfp7t7tlc0000gn/T//ccFfE3Kg.s]
-        ignore line: [GNU assembler version 2.45 (arm-none-eabi) using BFD version (GNU Binutils) 2.45]
-        ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/libexec/gcc/arm-none-eabi/15.2.0/:/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/libexec/gcc/arm-none-eabi/15.2.0/:/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/libexec/gcc/arm-none-eabi/:/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/:/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/]
-        ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/15.2.0/lib/gcc/arm-none-eabi/15.2.0/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /opt/homebrew/bin/cmake -E rm -f libcmTC_274e7.a && /opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_274e7.a  CMakeFiles/cmTC_274e7.dir/CMakeCCompilerABI.c.obj && /opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_274e7.a && /opt/homebrew/bin/cmake -E touch libcmTC_274e7.a && :]
+        ignore line: [Compiler executable checksum: 22ecb3ba0695dd63b6b4344fbf626903]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b9.dir/']
+        ignore line: [ /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj /var/folders/rj/1zgtr70j3lb03hztfp7t7tlc0000gn/T//ccyQ9Pqs.s]
+        ignore line: [GNU assembler version 2.43.1 (arm-none-eabi) using BFD version (xPack GNU Arm Embedded GCC arm64) 2.43.1.20241119]
+        ignore line: [COMPILER_PATH=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../libexec/gcc/arm-none-eabi/14.2.1/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../libexec/gcc/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/:/Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /opt/homebrew/bin/cmake -E rm -f libcmTC_e53b9.a && /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ar qc libcmTC_e53b9.a  CMakeFiles/cmTC_e53b9.dir/CMakeCCompilerABI.c.obj && /Users/wangjialong/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/arm-none-eabi-ranlib libcmTC_e53b9.a && /opt/homebrew/bin/cmake -E touch libcmTC_e53b9.a && :]
         ignore line: []
         ignore line: []
         implicit libs: []

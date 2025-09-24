@@ -1,16 +1,13 @@
+# 简单通用的 ARM 裸机工具链文件
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR arm)
-
-set(TOOLCHAIN_PREFIX arm-none-eabi)
-find_program(ARM_CC ${TOOLCHAIN_PREFIX}-gcc)
-find_program(ARM_CXX ${TOOLCHAIN_PREFIX}-g++)
-find_program(ARM_AS ${TOOLCHAIN_PREFIX}-gcc)
-find_program(ARM_AR ${TOOLCHAIN_PREFIX}-ar)
-find_program(ARM_OBJCOPY ${TOOLCHAIN_PREFIX}-objcopy)
-find_program(ARM_OBJDUMP ${TOOLCHAIN_PREFIX}-objdump)
-find_program(ARM_SIZE ${TOOLCHAIN_PREFIX}-size)
-
-set(CMAKE_C_COMPILER ${ARM_CC})
-set(CMAKE_CXX_COMPILER ${ARM_CXX})
-set(CMAKE_ASM_COMPILER ${ARM_AS})
 set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+
+set(TOOLCHAIN arm-none-eabi)
+
+find_program(CMAKE_C_COMPILER   ${TOOLCHAIN}-gcc)
+find_program(CMAKE_CXX_COMPILER ${TOOLCHAIN}-g++)
+find_program(CMAKE_ASM_COMPILER ${TOOLCHAIN}-gcc)
+find_program(CMAKE_AR           ${TOOLCHAIN}-ar)
+find_program(CMAKE_OBJCOPY      ${TOOLCHAIN}-objcopy)
+find_program(CMAKE_SIZE         ${TOOLCHAIN}-size)

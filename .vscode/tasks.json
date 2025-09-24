@@ -1,19 +1,8 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-      { "label": "cmake-config",
-        "type": "shell",
-        "command": "cmake -S . -B build -G Ninja"
-      },
-      { "label": "build",
-        "type": "shell",
-        "dependsOn": "cmake-config",
-        "command": "cmake --build build -j"
-      },
-      { "label": "flash-openocd",
-        "type": "shell",
-        "command": "openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c \"program build/stm32-min.elf verify reset exit\""
-      }
-    ]
-  }
-  
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "cmake-config", "type": "shell", "command": "cmake -S . -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain-gcc-arm-none-eabi.cmake -DCMAKE_BUILD_TYPE=Debug" },
+    { "label": "build", "type": "shell", "dependsOn": "cmake-config", "command": "cmake --build build -j" },
+    { "label": "flash-openocd", "type": "shell", "command": "openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c \"program build/stm32-min.elf verify reset exit\"" }
+  ]
+}

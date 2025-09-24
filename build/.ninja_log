@@ -1,0 +1,8 @@
+# ninja log v7
+1	13	1758683239211708692	CMakeFiles/stm32-min.dir/startup/startup_stm32f446xx.s.obj	fb0d1e6530f93b0f
+5	128	1758683347197208652	CMakeFiles/stm32-min.dir/src/main.c.obj	3e6f9f95feba0633
+47	91	1758683239257920259	stm32-min	a176b37698b3fa42
+4	48	1758683566540020689	build.ninja	fbb4bd00cae935c2
+4	48	1758683566540020689	/Users/wangjialong/Desktop/Resouces/Software/stm32-min/build/cmake_install.cmake	fbb4bd00cae935c2
+0	104	1758683566544805772	CMakeFiles/stm32-min.dir/src/system_stub.c.obj	ddcae716d71c2b1d
+104	150	1758683566648590879	stm32-min	6cabbe896ad9952b
