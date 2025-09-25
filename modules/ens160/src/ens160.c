@@ -1,5 +1,5 @@
 #include "ens160.h"
-#include "i2c_lowlevel.h"   // 你之前写的 I2C 基础函数
+#include "i2c_lowlevel.h"   // Your previously written low-level I2C functions
 
 static uint8_t ens160_addr = ENS160_I2C_ADDR;
 
@@ -7,17 +7,17 @@ bool ens160_init(uint8_t i2c_addr)
 {
     ens160_addr = i2c_addr;
 
-    // 读芯片 ID
+    // Read chip ID
     uint8_t id[2];
     if (!i2c1_read_regs(ens160_addr, ENS160_REG_PART_ID, id, 2))
         return false;
 
-    // 检查 ID 是否正确 (datasheet: 0x160 = 352)
+    // Check if ID is correct (datasheet: 0x0160 = 352)
     uint16_t part_id = (id[1] << 8) | id[0];
     if (part_id != 0x0160)
         return false;
 
-    // 设置标准工作模式
+    // Set standard operating mode
     uint8_t opmode = ENS160_OPMODE_STD;
     if (!i2c1_write_reg(ens160_addr, ENS160_REG_OPMODE, &opmode, 1))
         return false;

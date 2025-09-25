@@ -4,17 +4,17 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-// ENS160 默认 I2C 地址 (7-bit)，请用 I2C 扫描确认
+// ENS160 default I2C address (7-bit). Please confirm with an I2C scanner.
 #define ENS160_I2C_ADDR       0x53
 
-// 常用寄存器
+// Common registers
 #define ENS160_REG_PART_ID    0x00
 #define ENS160_REG_OPMODE     0x10
 #define ENS160_REG_DATA_AQI   0x22
 #define ENS160_REG_DATA_TVOC  0x24
-#define ENS160_REG_DATA_ECO2  0x22
+#define ENS160_REG_DATA_ECO2  0x22   // (check datasheet, may differ)
 
-// OPMODE
+// OPMODE values
 #define ENS160_OPMODE_IDLE    0x00
 #define ENS160_OPMODE_STD     0x02
 

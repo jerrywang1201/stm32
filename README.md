@@ -23,6 +23,7 @@ A minimal STM32F446RE project using **CMake + Ninja + arm-none-eabi-gcc**, demon
 ---
 
 ## Project Structure
+```bash
 STM32-MIN/
 ├── .vscode/ # VSCode configs (launch/tasks/settings)
 ├── cmake/ # Toolchain files
